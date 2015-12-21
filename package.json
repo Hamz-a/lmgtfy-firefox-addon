@@ -1,0 +1,16 @@
+{
+  "title": "Let Me Google That For You Addon",
+  "name": "lmgtfy-addon",
+  "version": "0.0.1",
+  "description": "Select, generate & share lmgtfy links.",
+  "main": "index.js",
+  "author": "Hamza",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
