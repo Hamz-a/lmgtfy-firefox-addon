@@ -4,13 +4,22 @@
   "version": "0.0.1",
   "description": "Select, generate & share lmgtfy links.",
   "main": "index.js",
-  "author": "Hamza",
+  "author": {
+    "name": "Hamza",
+    "email": "dzcyberdev@gmail.com"
+  },
+  "homepage": "https://github.com/Hamz-a/lmgtfy-firefox-addon",
+  "bugs": "https://github.com/Hamz-a/lmgtfy-firefox-addon/issues",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/Hamz-a/lmgtfy-firefox-addon.git"
+  },
   "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
   },
   "license": "MIT",
   "keywords": [
-    "jetpack"
+    "lmgtfy"
   ]
 }
