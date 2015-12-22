@@ -1,3 +1,4 @@
+var self = require("sdk/self");
 var contextMenu = require("sdk/context-menu");
 var clipboard = require("sdk/clipboard");
 
@@ -17,6 +18,7 @@ function createLink(url, input) {
 
 var menuItem = contextMenu.Item({
   label: "Create a lmgtfy link",
+  image: self.data.url("google-16.png"),
   context: contextMenu.SelectionContext(),
   contentScript: 'self.on("click", function () {' +
                  '  var text = window.getSelection().toString();' +
