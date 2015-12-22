@@ -10,7 +10,7 @@ This addon will let you select, generate and share lmgtfy links.
 
 --- 
 
-![share](screenshots/2.png?raw=true)
+![share](screenshots/3.png?raw=true)
 
 You can download and install it from [Mozilla's addons website](https://addons.mozilla.org/en-GB/firefox/addon/let-me-google-that-for-you-add/).
 
