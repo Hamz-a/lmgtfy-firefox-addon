@@ -9,11 +9,10 @@ function sanitize(input) {
     return input;
 }
 
-function createLink(input) {
+function createLink(url, input) {
     input = sanitize(input);                  // Sanitize input
     encodedText = encodeURIComponent(input);  // URL encode the input
-    link = urlQuery + encodedText;            // Append to url
-    return link;
+    return url + encodedText;                 // Append to url and return
 }
 
 var menuItem = contextMenu.Item({
@@ -24,6 +23,9 @@ var menuItem = contextMenu.Item({
                  '  self.postMessage(text);' +
                  '});',
   onMessage: function (selectionText) {
-    clipboard.set(createLink(selectionText), "text");
+    clipboard.set(createLink(urlQuery, selectionText), "text"); // Copy link to clipboard
   }
 });
+
+exports.sanitize   = sanitize;
+exports.createLink = createLink;
